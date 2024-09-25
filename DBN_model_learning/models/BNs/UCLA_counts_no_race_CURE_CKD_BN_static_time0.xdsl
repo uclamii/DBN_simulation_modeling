@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was created by ACADEMIC version of SMILE -->
+<smile version="1.0" id="Unnamed" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="time_zero_upcr_mean">
+			<state id="S_le_0_45655" />
+			<state id="S_s_0_45655" />
+			<probabilities>0.3868417227571351 0.613158277242865</probabilities>
+		</cpt>
+		<cpt id="year1_reduction_40_ge">
+			<state id="S_0" />
+			<state id="S_1" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.7334040342077441 0.2665959657922559 0.8898312933852373 0.1101687066147626</probabilities>
+		</cpt>
+		<cpt id="time_zero_uacr_mean">
+			<state id="S_19_5718___63_0498" />
+			<state id="S_63_0498___457_471" />
+			<state id="S_le_457_471" />
+			<state id="S_s_19_5718" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.2434976643482878 0.1976510660374546 0.2668992054170859 0.2919520641971716 0.2375513273551805 0.1253853979600978 0.06653326177373231 0.5705300129109895</probabilities>
+		</cpt>
+		<cpt id="time_zero_hba1c_mean">
+			<state id="S_4_75835___5_15835" />
+			<state id="S_5_15835___6_01665" />
+			<state id="S_6_01665___6_64165" />
+			<state id="S_le_6_64165" />
+			<state id="S_s_4_75835" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.04357985785664719 0.3306197697681829 0.1632154921416767 0.4268904666443664 0.03569441358912691 0.05976358140546543 0.6558883878373721 0.143004688608214 0.1252052083602132 0.0161381337887353</probabilities>
+		</cpt>
+		<cpt id="time_zero_dbp_mean">
+			<state id="S_62_5___71_5" />
+			<state id="S_le_71_5" />
+			<state id="S_s_62_5" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.3355592987021087 0.4659199838781631 0.1985207174197282 0.2653597312246283 0.6608749832176694 0.07376528555770229</probabilities>
+		</cpt>
+		<cpt id="time_zero_map_mean">
+			<state id="S_74_9945___84_4729" />
+			<state id="S_84_4729___109_327" />
+			<state id="S_le_109_327" />
+			<state id="S_s_74_9945" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.2246502060218191 0.5908455999315076 0.1053495617247317 0.07915463232194146 0.1854828244985555 0.7255959701381683 0.06246140875089497 0.02645979661238131</probabilities>
+		</cpt>
+		<cpt id="time_zero_pp_mean">
+			<state id="S_56_5___63_5" />
+			<state id="S_63_5___85_5" />
+			<state id="S_le_85_5" />
+			<state id="S_s_56_5" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.15806974665219 0.3129231002839444 0.07350714902168601 0.4555000040421796 0.1339487997034444 0.1270350446799404 0.01736736866196236 0.7216487869546528</probabilities>
+		</cpt>
+		<cpt id="time_zero_sbp_mean">
+			<state id="S_101_5___139_5" />
+			<state id="S_139_5___161_5" />
+			<state id="S_le_161_5" />
+			<state id="S_s_101_5" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.5856556269812917 0.2463686330261214 0.1006076479191259 0.06736809207346094 0.7686323179317144 0.1753019916225304 0.02452647801109026 0.03153921243466511</probabilities>
+		</cpt>
+		<cpt id="time_zero_scr_count">
+			<state id="S_1_5___2_5" />
+			<state id="S_2_5___8_5" />
+			<state id="S_8_5___85_5" />
+			<state id="S_le_85_5" />
+			<state id="S_s_1_5" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.1417314866872532 0.2158155212058389 0.2824724765150841 0.04116398022129144 0.3188165353705324 0.123056205212037 0.1354406360118285 0.06484675383337335 0.002292807585807406 0.6743635973569537</probabilities>
+		</cpt>
+		<cpt id="time_zero_norace_mean">
+			<state id="S_25_945___36_845" />
+			<state id="S_36_845___59_695" />
+			<state id="S_59_695___97_845" />
+			<state id="S_9_955___25_945" />
+			<state id="S_le_97_845" />
+			<state id="S_s_9_955" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.1158778951533957 0.3735884886597773 0.300158904963561 0.131618395482662 0.05781155119212104 0.02094476454848312 0.001457778715329157 0.002106298692581442 0.6499625350059866 0.001120085529486716 0.3453209831341093 3.231892250683654e-05</probabilities>
+		</cpt>
+		<cpt id="time_zero_bp_count">
+			<state id="S_0_5___2_5" />
+			<state id="S_2_5___9_5" />
+			<state id="S_377_5___2370_5" />
+			<state id="S_9_5___377_5" />
+			<state id="S_le_2370_5" />
+			<state id="S_s_0_5" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.0960515829615973 0.09816143199849219 0.06282050560747673 0.2467786905083111 0.04175462427417747 0.4544331646499452 0.1906567396982313 0.09721825072674221 0.0004087283205658125 0.08667216411912423 2.901790953192492e-05 0.6250150992258046</probabilities>
+		</cpt>
+		<cpt id="study_entry_period_dxckd_flag">
+			<state id="S_0" />
+			<state id="S_1" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.6834725038475526 0.3165274961524474 0.9777269196396454 0.02227308036035455</probabilities>
+		</cpt>
+		<cpt id="study_entry_period_egfrckd_norace_flag">
+			<state id="S_0" />
+			<state id="S_1" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.3532513073317876 0.6467486926682123 0.9943403749305654 0.005659625069434559</probabilities>
+		</cpt>
+		<cpt id="time_zero_ipv_count">
+			<state id="S_le_0_5" />
+			<state id="S_s_0_5" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.2758099219578763 0.7241900780421238 0.09871610504352932 0.9012838949564707</probabilities>
+		</cpt>
+		<cpt id="study_entry_DM_flag">
+			<state id="S_0" />
+			<state id="S_1" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.6191534351511306 0.3808465648488694 0.8898019229941961 0.1101980770058039</probabilities>
+		</cpt>
+		<cpt id="time_zero_av_count">
+			<state id="S_0_5___24_5" />
+			<state id="S_24_5___59_5" />
+			<state id="S_le_59_5" />
+			<state id="S_s_0_5" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.7150352360541053 0.1553305314373279 0.03094071062522845 0.09869352188333837 0.8413544772321681 0.02204413465913474 4.491842252962913e-05 0.1365564696861678</probabilities>
+		</cpt>
+		<cpt id="study_entry_age">
+			<state id="S_44_5___53_5" />
+			<state id="S_53_5___77_5" />
+			<state id="S_le_77_5" />
+			<state id="S_s_44_5" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.09960912262900691 0.5417329042319613 0.2637551636137386 0.09490280952529329 0.1795546064521133 0.4476093350609827 0.07684407600406062 0.2959919824828435</probabilities>
+		</cpt>
+		<cpt id="demo_race_ethnicity_cat">
+			<state id="S_1A" />
+			<state id="S_1B" />
+			<state id="S_2" />
+			<state id="S_3" />
+			<state id="S_4" />
+			<state id="S_5" />
+			<state id="S_8" />
+			<state id="S_minus_9" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.5090423681245243 0.09869789351096747 0.1157273617284233 0.09283202321036751 0.004900025758318644 0.002946574395318915 0.1369031035581485 0.03895064971393155 0.5461159291214023 0.08490355026731203 0.06612749568125269 0.09680702140877744 0.00737515858754294 0.002968429628487304 0.1221465849364728 0.07355583036875261</probabilities>
+		</cpt>
+		<cpt id="ruca_4_class">
+			<state id="S_isolated" />
+			<state id="S_large_rural" />
+			<state id="S_small_rural" />
+			<state id="S_urban" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.001925477128443906 0.02296449797601305 0.002540437443306793 0.9725695874522363 0.002475793785747703 0.0111632910580257 0.003804701277745717 0.9825562138784809</probabilities>
+		</cpt>
+		<cpt id="time_zero_hba1c_count">
+			<state id="S_0_5___1_5" />
+			<state id="S_le_1_5" />
+			<state id="S_s_0_5" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.2640944886435522 0.06864001015849025 0.6672655011979577 0.2760819172379694 0.01063571020238882 0.7132823725596418</probabilities>
+		</cpt>
+		<cpt id="time_zero_glp1_coverage">
+			<state id="S_le_84_5" />
+			<state id="S_s_84_5" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.002501274390132128 0.997498725609868 0.0004724931772738547 0.9995275068227261</probabilities>
+		</cpt>
+		<cpt id="demo_sex">
+			<state id="S_0" />
+			<state id="S_1" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.5439227550475335 0.4560772449524665 0.4900598352712054 0.5099401647287947</probabilities>
+		</cpt>
+		<cpt id="study_entry_sglt2_flag">
+			<state id="S_0" />
+			<state id="S_1" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.9879420174861319 0.01205798251386809 0.9994052577041957 0.0005947422958041588</probabilities>
+		</cpt>
+		<cpt id="study_entry_HTN_flag">
+			<state id="S_0" />
+			<state id="S_1" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.3735991662614155 0.6264008337385845 0.6472501035720259 0.3527498964279741</probabilities>
+		</cpt>
+		<cpt id="time_zero_mra_coverage">
+			<state id="S_le_8_5" />
+			<state id="S_s_8_5" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.003107030928812386 0.9968929690711876 9.03021096875491e-05 0.9999096978903125</probabilities>
+		</cpt>
+		<cpt id="time_zero_uacr_count">
+			<state id="S_le_2_5" />
+			<state id="S_s_2_5" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.002980236222490655 0.9970197637775093 0.0001703009228724178 0.9998296990771275</probabilities>
+		</cpt>
+		<cpt id="study_entry_mra_flag">
+			<state id="S_0" />
+			<state id="S_1" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.9979108087317179 0.002089191268282164 0.9996092815986972 0.0003907184013027885</probabilities>
+		</cpt>
+		<cpt id="study_entry_period_albprockd_flag">
+			<state id="S_0" />
+			<state id="S_1" />
+			<parents>time_zero_uacr_mean</parents>
+			<probabilities>0.963334934542099 0.03666506545790107 0.9107438466369928 0.08925615336300716 0.8693086059558649 0.1306913940441352 0.9996278883907843 0.0003721116092157184</probabilities>
+		</cpt>
+		<cpt id="time_zero_ppi_coverage">
+			<state id="S_le_80_5" />
+			<state id="S_s_80_5" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.1493058028538878 0.8506941971461123 0.01619029327860537 0.9838097067213946</probabilities>
+		</cpt>
+		<cpt id="study_entry_PDM_flag">
+			<state id="S_0" />
+			<state id="S_1" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.8961148434586783 0.1038851565413216 0.8594564613503487 0.1405435386496513</probabilities>
+		</cpt>
+		<cpt id="time_zero_aceiarb_coverage">
+			<state id="S_le_0_5" />
+			<state id="S_s_0_5" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.2055235519249066 0.7944764480750934 0.04189775858941754 0.9581022414105824</probabilities>
+		</cpt>
+		<cpt id="time_zero_nsaid_coverage">
+			<state id="S_le_4_5" />
+			<state id="S_s_4_5" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.05261385596440902 0.9473861440355911 0.03960149434072784 0.9603985056592722</probabilities>
+		</cpt>
+		<cpt id="time_zero_upcr_count">
+			<state id="S_le_0_5" />
+			<state id="S_s_0_5" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.0392601005776381 0.9607398994223619 0.01214083526464855 0.9878591647353515</probabilities>
+		</cpt>
+		<cpt id="study_entry_ppi_flag">
+			<state id="S_0" />
+			<state id="S_1" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.8100889994780633 0.1899110005219367 0.9313341154685968 0.06866588453140317</probabilities>
+		</cpt>
+		<cpt id="study_entry_nsaid_flag">
+			<state id="S_0" />
+			<state id="S_1" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.9447206585046443 0.0552793414953559 0.913377859992579 0.08662214000742084</probabilities>
+		</cpt>
+		<cpt id="study_entry_aceiarb_flag">
+			<state id="S_0" />
+			<state id="S_1" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.7356872955766124 0.2643127044233877 0.9129982321420255 0.08700176785797444</probabilities>
+		</cpt>
+		<cpt id="study_entry_glp1_flag">
+			<state id="S_0" />
+			<state id="S_1" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.9874694684681589 0.01253053153184114 0.9988489760982845 0.001151023901715458</probabilities>
+		</cpt>
+		<cpt id="time_zero_sglt2_coverage">
+			<state id="S_le_0_5" />
+			<state id="S_s_0_5" />
+			<parents>time_zero_upcr_mean</parents>
+			<probabilities>0.008916548226493628 0.9910834517735063 0.0008679174840006893 0.9991320825159993</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE_ACADEMIC 1.6.2@b061b4f1f63d" name="Unnamed">
+			<node id="time_zero_upcr_mean">
+				<name>time_zero_upcr_mean</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>960 40 1045 95</position>
+			</node>
+			<node id="year1_reduction_40_ge">
+				<name>year1_reduction_40_ge</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>948 175 1033 230</position>
+			</node>
+			<node id="time_zero_uacr_mean">
+				<name>time_zero_uacr_mean</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>914 306 999 361</position>
+			</node>
+			<node id="time_zero_hba1c_mean">
+				<name>time_zero_hba1c_mean</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>858 430 943 485</position>
+			</node>
+			<node id="time_zero_dbp_mean">
+				<name>time_zero_dbp_mean</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>782 542 867 597</position>
+			</node>
+			<node id="time_zero_map_mean">
+				<name>time_zero_map_mean</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>688 640 773 695</position>
+			</node>
+			<node id="time_zero_pp_mean">
+				<name>time_zero_pp_mean</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>579 721 664 776</position>
+			</node>
+			<node id="time_zero_sbp_mean">
+				<name>time_zero_sbp_mean</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>458 782 543 837</position>
+			</node>
+			<node id="time_zero_scr_count">
+				<name>time_zero_scr_count</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>328 822 413 877</position>
+			</node>
+			<node id="time_zero_norace_mean">
+				<name>time_zero_norace_mean</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>193 839 278 894</position>
+			</node>
+			<node id="time_zero_bp_count">
+				<name>time_zero_bp_count</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>58 833 143 888</position>
+			</node>
+			<node id="study_entry_period_dxckd_flag">
+				<name>study_entry_period_dxckd_flag</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-74 804 11 859</position>
+			</node>
+			<node id="study_entry_period_egfrckd_norace_flag">
+				<name>study_entry_period_egfrckd_norace_flag</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-200 754 -115 809</position>
+			</node>
+			<node id="time_zero_ipv_count">
+				<name>time_zero_ipv_count</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-315 683 -230 738</position>
+			</node>
+			<node id="study_entry_DM_flag">
+				<name>study_entry_DM_flag</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-417 593 -332 648</position>
+			</node>
+			<node id="time_zero_av_count">
+				<name>time_zero_av_count</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-502 487 -417 542</position>
+			</node>
+			<node id="study_entry_age">
+				<name>study_entry_age</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-568 369 -483 424</position>
+			</node>
+			<node id="demo_race_ethnicity_cat">
+				<name>demo_race_ethnicity_cat</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-614 241 -529 296</position>
+			</node>
+			<node id="ruca_4_class">
+				<name>ruca_4_class</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-637 107 -552 162</position>
+			</node>
+			<node id="time_zero_hba1c_count">
+				<name>time_zero_hba1c_count</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-637 -27 -552 28</position>
+			</node>
+			<node id="time_zero_glp1_coverage">
+				<name>time_zero_glp1_coverage</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-614 -161 -529 -106</position>
+			</node>
+			<node id="demo_sex">
+				<name>demo_sex</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-568 -289 -483 -234</position>
+			</node>
+			<node id="study_entry_sglt2_flag">
+				<name>study_entry_sglt2_flag</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-502 -407 -417 -352</position>
+			</node>
+			<node id="study_entry_HTN_flag">
+				<name>study_entry_HTN_flag</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-417 -513 -332 -458</position>
+			</node>
+			<node id="time_zero_mra_coverage">
+				<name>time_zero_mra_coverage</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-315 -603 -230 -548</position>
+			</node>
+			<node id="time_zero_uacr_count">
+				<name>time_zero_uacr_count</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-200 -674 -115 -619</position>
+			</node>
+			<node id="study_entry_mra_flag">
+				<name>study_entry_mra_flag</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-74 -724 11 -669</position>
+			</node>
+			<node id="study_entry_period_albprockd_flag">
+				<name>study_entry_period_albprockd_flag</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>58 -753 143 -698</position>
+			</node>
+			<node id="time_zero_ppi_coverage">
+				<name>time_zero_ppi_coverage</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>193 -759 278 -704</position>
+			</node>
+			<node id="study_entry_PDM_flag">
+				<name>study_entry_PDM_flag</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>328 -742 413 -687</position>
+			</node>
+			<node id="time_zero_aceiarb_coverage">
+				<name>time_zero_aceiarb_coverage</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>458 -702 543 -647</position>
+			</node>
+			<node id="time_zero_nsaid_coverage">
+				<name>time_zero_nsaid_coverage</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>579 -641 664 -586</position>
+			</node>
+			<node id="time_zero_upcr_count">
+				<name>time_zero_upcr_count</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>688 -560 773 -505</position>
+			</node>
+			<node id="study_entry_ppi_flag">
+				<name>study_entry_ppi_flag</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>782 -462 867 -407</position>
+			</node>
+			<node id="study_entry_nsaid_flag">
+				<name>study_entry_nsaid_flag</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>858 -350 943 -295</position>
+			</node>
+			<node id="study_entry_aceiarb_flag">
+				<name>study_entry_aceiarb_flag</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>914 -226 999 -171</position>
+			</node>
+			<node id="study_entry_glp1_flag">
+				<name>study_entry_glp1_flag</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>948 -95 1033 -40</position>
+			</node>
+			<node id="time_zero_sglt2_coverage">
+				<name>time_zero_sglt2_coverage</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>960 39 1045 94</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

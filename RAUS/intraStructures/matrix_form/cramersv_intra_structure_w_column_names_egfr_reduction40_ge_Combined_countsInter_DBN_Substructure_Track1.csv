@@ -1,0 +1,10 @@
+,year1_mean,year2_reduction_40_ge,year1_scr_count,year1_ipv_count,year1_hba1c_mean,year1_bp_count,year1_av_count,year1_upcr_count,year1_ppi_coverage
+year1_mean,0.0,1.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0
+year2_reduction_40_ge,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+year1_scr_count,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+year1_ipv_count,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+year1_hba1c_mean,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0
+year1_bp_count,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+year1_av_count,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+year1_upcr_count,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+year1_ppi_coverage,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
