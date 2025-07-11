@@ -135,7 +135,7 @@ if __name__ == "__main__":
 
                     # Create a custom divergin palette
                     # https://matplotlib.org/stable/tutorials/colors/colorbar_only.html
-                    cmap = "gray" # mpl.cm.viridis
+                    cmap = mpl.cm.viridis #"gray" # 
 
                     plt.figure(figsize=(10, 10))
                     plt.title(metric + " over time")

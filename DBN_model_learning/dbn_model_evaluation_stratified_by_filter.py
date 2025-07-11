@@ -210,8 +210,61 @@ if __name__ == "__main__":
                 "S_4",
                 "Non_S4",
             ]
+            sex_cats = [
+                "all sexes",
+                "male",
+                "female",
+            ]
+            egfr_cats = [
+                "Stage 1",
+                "Stage 2",
+                "Stage 3a",
+                "Stage 3b",
+                "Stage 4",
+                "Stage 5",
+            ]
 
-            filters = race_ethn_cats + ckd_cats
+            filters = sex_cats + egfr_cats + race_ethn_cats + ckd_cats
+
+            # load continuous values dataset to create CKD stages
+            if "UCLA" in filename and "_valid_" in filename:
+                filename_cont = "Data/split_datasets/cure_ckd_egfr_registry_preprocessed_project_preproc_data_UCLA_valid.csv"
+            elif "UCLA" in filename and "_test_" in filename:
+                filename_cont = "Data/split_datasets/cure_ckd_egfr_registry_preprocessed_project_preproc_data_UCLA_test.csv"
+            elif "UCLA" in filename and "_train_" in filename:
+                filename_cont = "Data/split_datasets/cure_ckd_egfr_registry_preprocessed_project_preproc_data_UCLA_train.csv"
+            elif "_Prov_discritizer" in filename:
+                filename_cont = "Data/cure_ckd_egfr_registry_preprocessed_project_preproc_data.csv".replace(".csv", "_excl_crit_applied.csv")
+            elif "PSJH" in filename and "_valid_" in filename:
+                filename_cont = "Data/split_datasets/cure_ckd_egfr_registry_preprocessed_project_preproc_data_Prov_valid.csv"
+            elif "PSJH" in filename and "_test_" in filename:
+                filename_cont = "Data/split_datasets/cure_ckd_egfr_registry_preprocessed_project_preproc_data_Prov_test.csv"
+            elif "PSJH" in filename and "_train_" in filename:    
+                filename_cont = "Data/split_datasets/cure_ckd_egfr_registry_preprocessed_project_preproc_data_Prov_train.csv"
+            elif "_UCLA_discritizer" in filename:
+                filename_cont = "Data/cure_ckd_egfr_registry_preprocessed_project_preproc_data.csv".replace(".csv", "_excl_crit_applied.csv")
+            elif "Combined" in filename and "_train_" in filename:
+                filename_cont = "Data/split_datasets/cure_ckd_egfr_registry_preprocessed_project_preproc_data_combined_train.csv"
+            elif "Combined" in filename and "_test_" in filename:
+                filename_cont = "Data/split_datasets/cure_ckd_egfr_registry_preprocessed_project_preproc_data_combined_test.csv"
+            elif "Combined" in filename and "_valid_" in filename:
+                filename_cont = "Data/split_datasets/cure_ckd_egfr_registry_preprocessed_project_preproc_data_combined_valid.csv"
+
+            if "_Prov_discritizer" in filename_cont:
+                df_to_test_cont = (pd.read_csv(
+                    filename_cont, usecols=["site_source_cat", "time_zero_norace_mean"]
+                )["site_source_cat"] == 0).reset_index(drop=True)
+            elif "_UCLA_discritizer" in filename_cont:
+                df_to_test_cont = (pd.read_csv(
+                    filename_cont, usecols=["site_source_cat", "time_zero_norace_mean"]
+                )["site_source_cat"] == 1).reset_index(drop=True)
+            else:
+                df_to_test_cont = pd.read_csv(filename_cont, usecols=["patient_id", "time_zero_norace_mean"])
+
+            print("Loading file: ", filename)
+            print("Number of samples in the dataset: ", len(df_to_test))
+            print("Loading file: ", filename_cont)
+            print("Number of samples in the continuous dataset: ", len(df_to_test_cont))
 
             #     print(df_to_test["demo_race_ethnicity_cat"].unique())
             #     print(df_to_test["demo_race_ethnicity_cat"].value_counts())
@@ -276,6 +329,27 @@ if __name__ == "__main__":
                         & (df_to_test[col] != "S_1")
                     )
                     df_valid = df_to_test[cond].reset_index(drop=True)
+                elif filter_cat == "all sexes":
+                    df_valid = df_to_test
+                elif filter_cat == "male":
+                    cond = df_to_test["demo_sex"] == "S_0"
+                    df_valid = df_to_test[cond].reset_index(drop=True)
+                elif filter_cat == "female":
+                    cond = df_to_test["demo_sex"] == "S_1"
+                    df_valid = df_to_test[cond].reset_index(drop=True)
+                # Evaluate the between condition for stage of CKD
+                elif filter_cat == "Stage 1":
+                    df_valid = df_to_test[df_to_test_cont["time_zero_norace_mean"] >= 90]
+                if filter_cat == "Stage 2":
+                    df_valid = df_to_test[df_to_test_cont["time_zero_norace_mean"].between(60, 89.999, inclusive="both")]
+                elif filter_cat == "Stage 3a":
+                    df_valid = df_to_test[df_to_test_cont["time_zero_norace_mean"].between(45, 59.999, inclusive="both")]
+                elif filter_cat == "Stage 3b":
+                    df_valid = df_to_test[df_to_test_cont["time_zero_norace_mean"].between(30, 44.999, inclusive="both")]
+                elif filter_cat == "Stage 4":
+                    df_valid = df_to_test[df_to_test_cont["time_zero_norace_mean"].between(15, 29.999, inclusive="both")]
+                elif filter_cat == "Stage 5":
+                    df_valid = df_to_test[df_to_test_cont["time_zero_norace_mean"] < 15]
                 else:
                     pass
 
