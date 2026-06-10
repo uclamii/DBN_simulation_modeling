@@ -105,6 +105,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+venv_ml_comp/
 
 # Spyder project settings
 .spyderproject
@@ -143,3 +144,7 @@ RAUS/compactStructure/*
 
 # Ignore saved models
 DBN_model_learning/CURE_CKD_BN.xdsl
+
+
+# cat
+catboost_info/
